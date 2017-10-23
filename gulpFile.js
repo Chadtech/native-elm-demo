@@ -65,17 +65,17 @@ gulp.task("elm-make", function () {
       util.log(util.colors.cyan("Elm"),
         util.colors.red(String(error))
       );
-    } 
+    }
     var stdout = stdout.slice(0, stdout.length - 1);
 
     stdout.split("\n").forEach(function(line) {
       util.log(util.colors.cyan("Elm"), line);
     })
-  }); 
+  });
 })
 
 gulp.task("server", function() {
-  return require("./server")(2984, util.log);
+  return require("./server")(2966, util.log);
 });
 
 
