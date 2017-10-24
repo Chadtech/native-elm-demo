@@ -1,7 +1,8 @@
 module Main exposing (..)
 
+import Array
 import Demo
-import Html
+import Html exposing (Html)
 
 
 four : Int
@@ -19,7 +20,8 @@ type Cool
     | WowWithString String
 
 
-main : Html.Html nothing
+main : Html nothing
 main =
-    Demo.json (WowWithString "Cool")
+    Array.empty
+        |> Demo.json
         |> Html.text

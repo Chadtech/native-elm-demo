@@ -2,7 +2,7 @@ function F2(f) {
   return function(a) {
     return function(b) {
       return f(a,b);
-    }   
+    }
   }
 }
 
@@ -12,7 +12,7 @@ function F3(f) {
       return function(c) {
         return f(a, b, c);
       }
-    }   
+    }
   }
 
 
@@ -29,6 +29,16 @@ function Tuple2(x, y)
 
 var Nil = { ctor: '[]' };
 
+
+var _elm_lang$core$Native_Basics = function() {
+	function toFloat(a) {
+		return a;
+	}
+
+	return {
+		toFloat: toFloat
+	}
+}
 
 var _elm_lang$core$Native_Singleton = function() {
 
